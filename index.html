@@ -15,25 +15,7 @@
     </div>
     <script src="https://unpkg.com/react@16.8.4/umd/react.development.js"></script>
     <script src="https://unpkg.com/react-dom@16.8.4/umd/react-dom.development.js"></script>
-    <script>
-        // createElement is 
-        /*
-            App is like a rubber stamp. It allows as to stamp its content as many
-            times we want. Every time we use app, a div is stamper (created) and inside 
-            of it an h1 is created.
-            Inside the empty curly brackets we put the attributes we want the div to have.
-        */
-        const App = () => {
-            return React.createElement(
-                "div",
-                {},
-                React.createElement("h1", {}, "Adopt Me!")
-            );
-        }
-
-        // Rendering to the DOM, we also say where we want App to be rendered
-        ReactDOM.render(React.createElement(App), document.getElementById("root"));
-    </script>
+    <script src="src/App.js"></script>
 </body>
 
 </html>
