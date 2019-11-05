@@ -1,0 +1,26 @@
+{
+  "name": "adopt-me",
+  "version": "1.0.0",
+  "description": "React app",
+  "main": "index.js",
+  "scripts": {
+    "format": "prettier \"src/**/*.{js,html}\" --write",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pavodev/adopt-me.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/pavodev/adopt-me/issues"
+  },
+  "homepage": "https://github.com/pavodev/adopt-me#readme",
+  "devDependencies": {
+    "eslint": "^6.6.0",
+    "eslint-config-prettier": "^6.5.0",
+    "prettier": "^1.18.2"
+  }
+}
