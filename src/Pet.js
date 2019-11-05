@@ -15,12 +15,7 @@ import React from "react";
     Destructuring props
 */
 export default function Pet({ name, animal, breed }) {
-  //   return React.createElement("div", {}, [
-  //     React.createElement("h1", {}, name),
-  //     React.createElement("h2", {}, animal),
-  //     React.createElement("h2", {}, breed)
-  //   ]);
-
+  // The curly braces indicate a javascript expression
   return (
     <div>
       <h1>{name}</h1>
