@@ -43,20 +43,22 @@
     "prettier": "^1.18.2"
   },
   "dependencies": {
+    "@emotion/babel-preset-css-prop": "^10.0.23",
+    "@emotion/core": "^10.0.22",
     "@frontendmasters/pet": "^1.0.3",
     "@reach/router": "^1.2.1",
     "react": "^16.11.0",
     "react-dom": "^16.11.0"
   },
   "browserslist": [
-    "last 2 Chrome versions",
-    "last 2 ChromeAndroid versions",
-    "last 2 Firefox versions",
-    "last 2 FirefoxAndroid versions",
-    "last 2 Safari versions",
-    "last 2 iOS versions",
-    "last 2 Edge versions",
-    "last 2 Opera versions",
-    "last 2 OperaMobile versions"
+    "last 1 Chrome versions",
+    "last 1 ChromeAndroid versions",
+    "last 1 Firefox versions",
+    "last 1 FirefoxAndroid versions",
+    "last 1 Safari versions",
+    "last 1 iOS versions",
+    "last 1 Edge versions",
+    "last 1 Opera versions",
+    "last 1 OperaMobile versions"
   ]
 }

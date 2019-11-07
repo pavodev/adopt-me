@@ -1,19 +1,13 @@
 {
   "presets": [
+    "@babel/preset-react",
+    "@babel/preset-env",
     [
-      "@babel/preset-env",
-      "module:@babel/preset-react",
-      "@babel/preset-env",
+      "@emotion/babel-preset-css-prop",
       {
-        "targets": {
-          "browsers": [">0.25%", "not ie 11", "not op_mini all"]
-        }
+        "sourceMap": false
       }
-    ],
-    "@babel/preset-react"
+    ]
   ],
-  "plugins": [
-    "@babel/plugin-transform-runtime",
-    "@babel/plugin-proposal-class-properties"
-  ]
+  "plugins": ["@babel/plugin-proposal-class-properties"]
 }

@@ -1,22 +1,21 @@
 import React, { useState } from "react";
 import { render } from "react-dom";
 import SearchParams from "./SearchParams";
-import { Router, Link } from "@reach/router";
+import { Router } from "@reach/router";
 import Details from "./Details";
 import ThemeContext from "./ThemeContext";
+import NavBar from "./NavBar";
 
 const App = () => {
-  const themeHook = useState("darkblue");
+  // if we want to pass multiple entries with context, the best thing to do
+  // is to pass an object -> useState({theme: "navy", flag: true})
+  const themeHook = useState("navy");
 
   return (
     <React.StrictMode>
       <ThemeContext.Provider value={themeHook}>
         <div>
-          <header>
-            <Link to="/">
-              <h1 id="something important">Adopt me!</h1>
-            </Link>
-          </header>
+          <NavBar />
           <Router>
             <SearchParams path="/" />
             <Details path="/details/:id" />
