@@ -1,13 +1,14 @@
 //mostly code from react.js.org/docs/error-boundaries.html
 
 import React, { Component } from "react";
-import { Link } from "@reach/router";
+import { Link, Redirect } from "@reach/router";
 
 /* This component catches any errors that happens in its children */
 /* Returns this.props.children because render must return something */
 class ErrorBoundary extends Component {
   state = { hasError: false, redirect: false };
 
+  // this is also a lifecycle method
   static getDerivedStateFromError() {
     return { hasError: true };
   }
