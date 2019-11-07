@@ -35,4 +35,5 @@ const App = () => {
 };
 
 // Rendering to the DOM, we also say where we want App to be rendered
-render(<App />, document.getElementById("root"));
+// render(<App />, document.getElementById("root"));
+export default App;
