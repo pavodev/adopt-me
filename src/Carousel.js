@@ -7,6 +7,7 @@ class Carousel extends React.Component {
   };
 
   /* Creates states from a set of properties */
+  // this is also a lifecycle method
   static getDerivedStateFromProps({ media }) {
     let photos = ["http://placecorgi.com/600/600"];
 
