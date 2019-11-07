@@ -1,5 +1,7 @@
 import React from "react";
 import pet from "@frontendmasters/pet";
+import Carousel from "./Carousel";
+
 /*
     CLASS COMPONENTS
 
@@ -12,14 +14,16 @@ import pet from "@frontendmasters/pet";
         it is immutable!
 */
 class Details extends React.Component {
-  constructor(props) {
-    super(props); //call the constructor on my parent's constructor
+  // constructor(props) {
+  //   super(props); //call the constructor on my parent's constructor
 
-    // it is self-contained by the class, no one from the outside can access it.
-    this.state = {
-      loading: true
-    };
-  }
+  //   // it is self-contained by the class, no one from the outside can access it.
+  //   this.state = {
+  //     loading: true
+  //   };
+  // }
+
+  state = { loading: true }; // using new javascript class-properties
 
   componentDidMount() {
     pet
@@ -42,10 +46,11 @@ class Details extends React.Component {
   render() {
     if (this.state.loading) return <h1>Loading...</h1>;
 
-    const { animal, breed, location, description, name } = this.state;
+    const { animal, breed, location, description, name, media } = this.state;
 
     return (
       <div className="details">
+        <Carousel media={media} />
         <div>
           <h1>{name}</h1>
           <h2>{`${animal} - ${breed} - ${location}`}</h2>
