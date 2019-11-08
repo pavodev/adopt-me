@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "@reach/router";
 import { css, keyframes } from "@emotion/core";
-import colors from "./colors";
+//import colors from "./colors";
 
 const Spin = keyframes`
   100% {

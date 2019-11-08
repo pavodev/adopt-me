@@ -28,7 +28,9 @@
     "@babel/preset-env": "^7.7.1",
     "@babel/preset-react": "^7.7.0",
     "@babel/runtime": "^7.7.1",
+    "@types/reach__router": "^1.2.6",
     "@types/react": "^16.9.11",
+    "@types/react-dom": "^16.9.4",
     "babel-eslint": "^10.0.3",
     "babel-plugin-transform-runtime": "^6.23.0",
     "babel-runtime": "^6.26.0",
@@ -40,7 +42,8 @@
     "eslint-plugin-react": "^7.16.0",
     "eslint-plugin-react-hooks": "^2.2.0",
     "parcel-bundler": "^1.12.4",
-    "prettier": "^1.18.2"
+    "prettier": "^1.18.2",
+    "typescript": "^3.7.2"
   },
   "dependencies": {
     "@emotion/babel-preset-css-prop": "^10.0.23",

@@ -7,9 +7,11 @@ body {
   background-color: #81a69b;
   background: linear-gradient(
     0deg,
-    rgba(237, 229, 18, 1) 0%,
-    rgba(0, 0, 0, 1) 100%
+    rgba(214, 18, 18, 1) 0%,
+    rgba(0, 0, 0, 0.8375634517766497) 100%
   );
+  background-repeat: no-repeat;
+  background-attachment: fixed;
   margin: 0;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
@@ -17,12 +19,12 @@ body {
 .search-params {
   width: 1100px;
   margin: 0 auto;
-  background-color: #d9c148;
+  background-color: #ff4444;
   border-radius: 5px;
 }
 
 .search-params form {
-  background-color: #d9c148;
+  background-color: #ff4444;
   width: 360px;
   margin: 0px 25px 0px 0px;
   padding: 35px 15px 15px 15px;
@@ -31,7 +33,7 @@ body {
 }
 
 .search {
-  background-color: #d9c148;
+  background-color: #ff4444;
   width: 715px;
   padding: 15px;
   border-radius: 9px;
@@ -42,7 +44,7 @@ body {
 .details {
   width: 1100px;
   margin: 0 auto;
-  background-color: #d9c148;
+  background-color: #ff4444;
   padding: 15px;
   border-radius: 9px;
   margin-bottom: 25px;
@@ -54,7 +56,7 @@ body {
   display: block;
   overflow: hidden;
   margin: 25px 0;
-  border-bottom: #bf9b2f 1px solid;
+  border-bottom: #111 1px solid;
 }
 
 .pet img {
@@ -83,7 +85,7 @@ body {
   white-space: nowrap;
   font-weight: normal;
   font-size: 30px;
-  color: #bf3334;
+  color: #420a0a;
   width: 95%;
   overflow: hidden;
   margin: 0;
