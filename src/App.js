@@ -13,7 +13,7 @@ const SearchParams = lazy(() => import("./SearchParams"));
 // Displays something till the content is rendered
 
 const App = () => {
-  // if we want to pass multiple entries with context, the best thing to do
+  // if we want to pass multiples entries with context, the best thing to do
   // is to pass an object -> useState({theme: "navy", flag: true})
   const themeHook = useState("navy");
 
