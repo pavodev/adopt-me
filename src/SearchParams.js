@@ -38,6 +38,7 @@ const SearchParams = () => {
 
   /* 
     useEffect:
+
         It is disconnected from when the render is happening.
         The function inside it is scheduled to run after the render happens.
         Usually it is used to avoid a slow down of the first render (jsx returned 
@@ -51,6 +52,7 @@ const SearchParams = () => {
         (usefull when we have an initial setup to do, etc.).
 
         If the second argument is not specified, it runs every time anything updates.
+
   */
   useEffect(() => {
     setBreeds([]);
@@ -59,7 +61,7 @@ const SearchParams = () => {
     pet.breeds(animal).then(({ breeds: apiBreeds }) => {
       const breedStrings = apiBreeds.map(({ name }) => name);
       setBreeds(breedStrings);
-    }, console.error);
+    });
   }, [animal, setBreed, setBreeds]);
 
   /* 
