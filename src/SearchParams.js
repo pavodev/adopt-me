@@ -65,8 +65,8 @@ const SearchParams = () => {
   }, [animal, setBreed, setBreeds]);
 
   /* 
-    We use 'className' because in Javascript 'class' is a reserved word 
-    and React renames it.
+    We use the attribute 'className' because in Javascript 'class' is a reserved word 
+    and React renames.
   */
   return (
     <div className="search-params">
